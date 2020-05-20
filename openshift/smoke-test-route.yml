@@ -1,0 +1,19 @@
+---
+apiVersion: v1
+kind: Route
+metadata:
+  annotations:
+    haproxy.router.openshift.io/balance: roundrobin
+  labels:
+    app: smoke-test
+    provider: fabric8
+    version: 1.0-SNAPSHOT
+    group: poc
+  name: smoke-test
+spec:
+  port:
+    targetPort: http
+  to:
+    kind: Service
+    name: smoke-test
+status: {}

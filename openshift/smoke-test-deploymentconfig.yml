@@ -1,0 +1,81 @@
+---
+apiVersion: apps.openshift.io/v1
+kind: DeploymentConfig
+metadata:
+  annotations:
+    fabric8.io/git-commit: 306e9fb1412dad419442675b199a8b1d35b05fad
+    fabric8.io/iconUrl: img/icons/camel.svg
+    fabric8.io/git-branch: master
+    fabric8.io/metrics-path: dashboard/file/camel-routes.json/?var-project=smoke-test&var-version=1.0-SNAPSHOT
+  labels:
+    app: smoke-test
+    provider: fabric8
+    version: 1.0-SNAPSHOT
+    group: poc
+  name: smoke-test
+spec:
+  replicas: 1
+  revisionHistoryLimit: 2
+  selector:
+    app: smoke-test
+    provider: fabric8
+    group: poc
+  strategy:
+    rollingParams:
+      timeoutSeconds: 3600
+    type: Rolling
+  template:
+    metadata:
+      annotations:
+        fabric8.io/git-commit: 306e9fb1412dad419442675b199a8b1d35b05fad
+        fabric8.io/iconUrl: img/icons/camel.svg
+        fabric8.io/git-branch: master
+        fabric8.io/metrics-path: dashboard/file/camel-routes.json/?var-project=smoke-test&var-version=1.0-SNAPSHOT
+      labels:
+        app: smoke-test
+        provider: fabric8
+        version: 1.0-SNAPSHOT
+        group: poc
+    spec:
+      containers:
+      - env:
+        - name: KUBERNETES_NAMESPACE
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.namespace
+        image: poc/smoke-test:snapshot-200519-234437-0650
+        imagePullPolicy: IfNotPresent
+        livenessProbe:
+          httpGet:
+            path: /actuator/health
+            port: 8080
+            scheme: HTTP
+          initialDelaySeconds: 180
+        name: spring-boot
+        ports:
+        - containerPort: 8080
+          name: http
+          protocol: TCP
+        - containerPort: 9779
+          name: prometheus
+          protocol: TCP
+        - containerPort: 8778
+          name: jolokia
+          protocol: TCP
+        readinessProbe:
+          httpGet:
+            path: /actuator/health
+            port: 8080
+            scheme: HTTP
+          initialDelaySeconds: 10
+        resources:
+          limits:
+            cpu: "2.0"
+            memory: 512Mi
+          requests:
+            cpu: "0.2"
+            memory: 128Mi
+        securityContext:
+          privileged: false
+  triggers:
+  - type: ConfigChange

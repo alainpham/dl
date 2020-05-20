@@ -1,0 +1,14 @@
+---
+apiVersion: v1
+kind: ImageStream
+metadata:
+  labels:
+    component: smoke-test
+    group: poc
+    app: smoke-test
+    provider: fabric8
+    version: 1.0-SNAPSHOT
+  name: smoke-test
+spec: {}
+status:
+  dockerImageRepository: ""
