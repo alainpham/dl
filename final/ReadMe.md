@@ -5,7 +5,7 @@ cp ./product-details-couchbase/target/product-details-couchbase-ocp.tar.gz ../de
 cp ./account-to-orcl/target/account-to-orcl-ocp.tar.gz ../deliver/final/
 cp ./account-to-couchbase/target/account-to-couchbase-ocp.tar.gz ../deliver/final/
 cp ./product-details-orcl/target/product-details-orcl-ocp.tar.gz ../deliver/final/
-cp ./customer-couchbase/target/customer-couchbase-ocp.tar.gzv ../deliver/final/
+cp ./customer-couchbase/target/customer-couchbase-ocp.tar.gz ../deliver/final/
 cp ./customer-orcl/target/customer-orcl-ocp.tar.gz ../deliver/final/ 
 cp ./cust-account-aggregation-couchbase/target/cust-account-aggregation-couchbase-ocp.tar.gz ../deliver/final/
 cp ./transaction-daily-orcl/target/transaction-daily-orcl-ocp.tar.gz ../deliver/final/
