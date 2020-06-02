@@ -1,0 +1,185 @@
+---
+apiVersion: kafka.strimzi.io/v1beta1
+kind: KafkaTopic
+metadata:
+  name: tra0taiban
+  labels:
+    strimzi.io/cluster: my-cluster
+spec:
+  partitions: 18
+  replicas: 3
+  config:
+    retention.ms: 7200000
+    segment.bytes: 1073741824
+  topicName: TRA0TAIBAN
+  
+---
+apiVersion: kafka.strimzi.io/v1beta1
+kind: KafkaTopic
+metadata:
+  name: cae0master
+  labels:
+    strimzi.io/cluster: my-cluster
+spec:
+  partitions: 18
+  replicas: 3
+  config:
+    retention.ms: 7200000
+    segment.bytes: 1073741824
+  topicName: CAE0MASTER
+  
+---
+apiVersion: kafka.strimzi.io/v1beta1
+kind: KafkaTopic
+metadata:
+  name: account
+  labels:
+    strimzi.io/cluster: my-cluster
+spec:
+  partitions: 18
+  replicas: 3
+  config:
+    retention.ms: 7200000
+    segment.bytes: 1073741824
+  topicName: account
+  
+  
+---
+apiVersion: kafka.strimzi.io/v1beta1
+kind: KafkaTopic
+metadata:
+  name: account
+  labels:
+    strimzi.io/cluster: my-cluster
+spec:
+  partitions: 18
+  replicas: 3
+  config:
+    retention.ms: 7200000
+    segment.bytes: 1073741824
+  topicName: account
+
+---
+apiVersion: kafka.strimzi.io/v1beta1
+kind: KafkaTopic
+metadata:
+  name: egaaart
+  labels:
+    strimzi.io/cluster: my-cluster
+spec:
+  partitions: 18
+  replicas: 3
+  config:
+    retention.ms: 7200000
+    segment.bytes: 1073741824
+  topicName: EGAAART
+
+---
+apiVersion: kafka.strimzi.io/v1beta1
+kind: KafkaTopic
+metadata:
+  name: egaaaql
+  labels:
+    strimzi.io/cluster: my-cluster
+spec:
+  partitions: 18
+  replicas: 3
+  config:
+    retention.ms: 7200000
+    segment.bytes: 1073741824
+  topicName: EGAAAQL
+
+---
+apiVersion: kafka.strimzi.io/v1beta1
+kind: KafkaTopic
+metadata:
+  name: egaaart
+  labels:
+    strimzi.io/cluster: my-cluster
+spec:
+  partitions: 18
+  replicas: 3
+  config:
+    retention.ms: 7200000
+    segment.bytes: 1073741824
+  topicName: EGAAART
+
+---
+apiVersion: kafka.strimzi.io/v1beta1
+kind: KafkaTopic
+metadata:
+  name: transaction_daily
+  labels:
+    strimzi.io/cluster: my-cluster
+spec:
+  partitions: 18
+  replicas: 3
+  config:
+    retention.ms: 7200000
+    segment.bytes: 1073741824
+  topicName: TRANSACTION_DAILY
+
+
+---
+apiVersion: kafka.strimzi.io/v1beta1
+kind: KafkaTopic
+metadata:
+  name: lcc0mo09
+  labels:
+    strimzi.io/cluster: my-cluster
+spec:
+  partitions: 18
+  replicas: 3
+  config:
+    retention.ms: 7200000
+    segment.bytes: 1073741824
+  topicName: LCC0MO09
+
+
+---
+apiVersion: kafka.strimzi.io/v1beta1
+kind: KafkaTopic
+metadata:
+  name: lcc0modati09
+  labels:
+    strimzi.io/cluster: my-cluster
+spec:
+  partitions: 18
+  replicas: 3
+  config:
+    retention.ms: 7200000
+    segment.bytes: 1073741824
+  topicName: LCC0MODATI09
+
+
+---
+apiVersion: kafka.strimzi.io/v1beta1
+kind: KafkaTopic
+metadata:
+  name: tpcccausali
+  labels:
+    strimzi.io/cluster: my-cluster
+spec:
+  partitions: 18
+  replicas: 3
+  config:
+    retention.ms: 7200000
+    segment.bytes: 1073741824
+  topicName: TPCCCAUSALI
+
+
+---
+apiVersion: kafka.strimzi.io/v1beta1
+kind: KafkaTopic
+metadata:
+  name: transactionhistory
+  labels:
+    strimzi.io/cluster: my-cluster
+spec:
+  partitions: 18
+  replicas: 3
+  config:
+    retention.ms: 7200000
+    segment.bytes: 1073741824
+  topicName: transactionhistory
+
