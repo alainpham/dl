@@ -43,22 +43,6 @@ spec:
     segment.bytes: 1073741824
   topicName: account
   
-  
----
-apiVersion: kafka.strimzi.io/v1beta1
-kind: KafkaTopic
-metadata:
-  name: account
-  labels:
-    strimzi.io/cluster: my-cluster
-spec:
-  partitions: 18
-  replicas: 3
-  config:
-    retention.ms: 7200000
-    segment.bytes: 1073741824
-  topicName: account
-
 ---
 apiVersion: kafka.strimzi.io/v1beta1
 kind: KafkaTopic
@@ -93,22 +77,7 @@ spec:
 apiVersion: kafka.strimzi.io/v1beta1
 kind: KafkaTopic
 metadata:
-  name: egaaart
-  labels:
-    strimzi.io/cluster: my-cluster
-spec:
-  partitions: 18
-  replicas: 3
-  config:
-    retention.ms: 7200000
-    segment.bytes: 1073741824
-  topicName: EGAAART
-
----
-apiVersion: kafka.strimzi.io/v1beta1
-kind: KafkaTopic
-metadata:
-  name: transaction_daily
+  name: transactiondaily
   labels:
     strimzi.io/cluster: my-cluster
 spec:
