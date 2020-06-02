@@ -17,6 +17,7 @@ wget https://github.com/alainpham/dl/raw/master/final/account-aggregation-ocp.ta
 wget https://github.com/alainpham/dl/raw/master/final/account-to-couchbase-ocp.tar.gz
 wget https://github.com/alainpham/dl/raw/master/final/account-to-orcl-ocp.tar.gz
 wget https://github.com/alainpham/dl/raw/master/final/cust-account-aggregation-couchbase-ocp.tar.gz
+wget https://github.com/alainpham/dl/raw/master/final/customer-couchbase-ocp.tar.gz
 wget https://github.com/alainpham/dl/raw/master/final/customer-orcl-ocp.tar.gz
 wget https://github.com/alainpham/dl/raw/master/final/product-details-couchbase-ocp.tar.gz
 wget https://github.com/alainpham/dl/raw/master/final/product-details-orcl-ocp.tar.gz
@@ -29,6 +30,7 @@ tar xzvf account-aggregation-ocp.tar.gz
 tar xzvf account-to-couchbase-ocp.tar.gz
 tar xzvf account-to-orcl-ocp.tar.gz
 tar xzvf cust-account-aggregation-couchbase-ocp.tar.gz
+tar xzvf customer-couchbase-ocp.tar.gz
 tar xzvf customer-orcl-ocp.tar.gz
 tar xzvf product-details-couchbase-ocp.tar.gz
 tar xzvf product-details-orcl-ocp.tar.gz
