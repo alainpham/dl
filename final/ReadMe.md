@@ -10,7 +10,7 @@ cp ./customer-orcl/target/customer-orcl-ocp.tar.gz ../deliver/final/
 cp ./cust-account-aggregation-couchbase/target/cust-account-aggregation-couchbase-ocp.tar.gz ../deliver/final/
 cp ./transaction-daily-orcl/target/transaction-daily-orcl-ocp.tar.gz ../deliver/final/
 cp ./account-aggregation/target/account-aggregation-ocp.tar.gz ../deliver/final/
-
+cp ./transaction-history-cb/target/transaction-history-cb-ocp.tar.gz ../deliver/final/
 
 
 wget https://github.com/alainpham/dl/raw/master/final/account-aggregation-ocp.tar.gz
@@ -25,6 +25,7 @@ wget https://github.com/alainpham/dl/raw/master/final/transaction-daily-couchbas
 wget https://github.com/alainpham/dl/raw/master/final/transaction-daily-orcl-ocp.tar.gz
 wget https://github.com/alainpham/dl/raw/master/final/transaction-history-couchbase-ocp.tar.gz
 wget https://github.com/alainpham/dl/raw/master/final/transaction-history-ocp.tar.gz
+wget https://github.com/alainpham/dl/raw/master/final/transaction-history-cb-ocp.tar.gz
 
 tar xzvf account-aggregation-ocp.tar.gz
 tar xzvf account-to-couchbase-ocp.tar.gz
@@ -38,9 +39,9 @@ tar xzvf transaction-daily-couchbase-ocp.tar.gz
 tar xzvf transaction-daily-orcl-ocp.tar.gz
 tar xzvf transaction-history-couchbase-ocp.tar.gz
 tar xzvf transaction-history-ocp.tar.gz
+tar xzvf transaction-history-cb.tar.gz
 
-
-projlist = account-aggregation account-to-couchbase account-to-orcl cust-account-aggregation-couchbase customer-couchbase customer-orcl product-details-couchbase product-details-orcl transaction-daily-couchbase transaction-daily-orcl transaction-history transaction-history-couchbase
+projlist = account-aggregation account-to-couchbase account-to-orcl cust-account-aggregation-couchbase customer-couchbase customer-orcl product-details-couchbase product-details-orcl transaction-daily-couchbase transaction-daily-orcl transaction-history transaction-history-couchbase transaction-history-cb
 
 for proj in $projlist
 do
@@ -62,4 +63,5 @@ transaction-daily-couchbase
 transaction-daily-orcl
 transaction-history
 transaction-history-couchbase
+transaction-history-cb
 

@@ -7,7 +7,7 @@ metadata:
     strimzi.io/cluster: my-cluster
 spec:
   partitions: 18
-  replicas: 3
+  replicas: 1
   config:
     retention.ms: 7200000
     segment.bytes: 1073741824
@@ -22,7 +22,7 @@ metadata:
     strimzi.io/cluster: my-cluster
 spec:
   partitions: 18
-  replicas: 3
+  replicas: 1
   config:
     retention.ms: 7200000
     segment.bytes: 1073741824
@@ -37,7 +37,7 @@ metadata:
     strimzi.io/cluster: my-cluster
 spec:
   partitions: 18
-  replicas: 3
+  replicas: 1
   config:
     retention.ms: 7200000
     segment.bytes: 1073741824
@@ -52,7 +52,7 @@ metadata:
     strimzi.io/cluster: my-cluster
 spec:
   partitions: 18
-  replicas: 3
+  replicas: 1
   config:
     retention.ms: 7200000
     segment.bytes: 1073741824
@@ -67,7 +67,7 @@ metadata:
     strimzi.io/cluster: my-cluster
 spec:
   partitions: 18
-  replicas: 3
+  replicas: 1
   config:
     retention.ms: 7200000
     segment.bytes: 1073741824
@@ -82,7 +82,7 @@ metadata:
     strimzi.io/cluster: my-cluster
 spec:
   partitions: 18
-  replicas: 3
+  replicas: 1
   config:
     retention.ms: 7200000
     segment.bytes: 1073741824
@@ -98,7 +98,7 @@ metadata:
     strimzi.io/cluster: my-cluster
 spec:
   partitions: 18
-  replicas: 3
+  replicas: 1
   config:
     retention.ms: 7200000
     segment.bytes: 1073741824
@@ -114,7 +114,7 @@ metadata:
     strimzi.io/cluster: my-cluster
 spec:
   partitions: 18
-  replicas: 3
+  replicas: 1
   config:
     retention.ms: 7200000
     segment.bytes: 1073741824
@@ -130,7 +130,7 @@ metadata:
     strimzi.io/cluster: my-cluster
 spec:
   partitions: 18
-  replicas: 3
+  replicas: 1
   config:
     retention.ms: 7200000
     segment.bytes: 1073741824
@@ -146,7 +146,7 @@ metadata:
     strimzi.io/cluster: my-cluster
 spec:
   partitions: 18
-  replicas: 3
+  replicas: 1
   config:
     retention.ms: 7200000
     segment.bytes: 1073741824
